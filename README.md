@@ -2,7 +2,8 @@
 
 <img width="2500" height="857" alt="image" src="https://github.com/user-attachments/assets/94070905-4cbe-4ed5-8e6e-878911bbd5e2" />
 
-A comprehensive toolkit for working with SEL (Schweitzer Engineering Laboratories) .rdb relay database files.
+
+# A comprehensive toolkit for working with SEL (Schweitzer Engineering Laboratories) .rdb relay database files.
 
 Developed by **AOUF Nihed**, an Electrical Engineering student at **ESGEE (École Supérieure de Génie Électrique)**, as part of a project in collaboration with **Ateam Pro-tech**, an official partner of **SEL Schweitzer Engineering Laboratories**.
 
