@@ -1,7 +1,8 @@
 # SEL_RDB
 
 
-![SEL Schweitzer Engineering Laboratories](https://www.selinc.com/images/logos/sel-logo.svg)
+![SEL Schweitzer Engineering Laboratories](https://raw.githubusercontent.com/<username>/<repo>/main/assets/sel-logo.svg)
+
 
 A comprehensive toolkit for working with SEL (Schweitzer Engineering Laboratories) .rdb relay database files.
 
@@ -46,7 +47,6 @@ sel_rdb/
 ├── convert_txt_to_rdb.py       # Convert text files to RDB format
 ├── utils.py                    # General utility functions
 ├── Relay710.rdb                # Template RDB file
-└── ...                         # Additional modules for specific functions
 ```
 
 ## Installation
@@ -197,4 +197,4 @@ Each stream contains specific types of configuration data in text format.
 
 ## License
 
-This project is licensed under the MIT License."# SEL_RDB"  
+This project is licensed under the MIT License."SEL_RDB"  
