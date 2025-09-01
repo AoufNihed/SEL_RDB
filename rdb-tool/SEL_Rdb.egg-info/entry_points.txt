@@ -1,0 +1,5 @@
+[console_scripts]
+sel-rdb-analyze = sel_rdb.rdb_analyzer:main
+sel-rdb-create = sel_rdb.create_rdb_template:main
+sel-rdb-extract-logic = sel_rdb.extract_logic_section:main
+sel-rdb-list = sel_rdb.list_rdb_streams:main

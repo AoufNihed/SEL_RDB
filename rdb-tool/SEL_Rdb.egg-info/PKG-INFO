@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: SEL_Rdb
+Version: 1.0.0
+Summary: A comprehensive toolkit for working with SEL (Schweitzer Engineering Laboratories) .rdb relay database files
+Home-page: https://github.com/your-username/SEL_Rdb
+Author: AOUF Nihed
+Author-email: AOUF Nihed <aouf_nihed@esgee-oran.dz>
+License: MIT
+Project-URL: Homepage, https://github.com/AoufNihed/SEL_RDB
+Project-URL: Bug Tracker, https://github.com/AoufNihed/SEL_RDB/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: olefile
+Requires-Dist: openpyxl
+
+# SEL_Rdb
+
+A comprehensive toolkit for working with SEL (Schweitzer Engineering Laboratories) .rdb relay database files.
+
+Developed by **AOUF Nihed**, an Electrical Engineering student at **ESGEE (École Supérieure de Génie Électrique)**, as part of a final year project in collaboration with **Ateam Pro-tech**, an official partner of **SEL Schweitzer Engineering Laboratories**.
+
+## Installation
+
+```bash
+pip install SEL_Rdb
+```
+
+## Features
+
+- Analyze SEL .rdb files and extract their contents
+- Extract logic sections from RDB files
+- Convert text-based relay settings to .rdb format
+- Work with SEL relay configuration data
+
+## Usage
+
+### As a command-line tool:
+
+
+```bash
+# Analyze an RDB file
+sel-rdb-analyze path/to/file.rdb
+
+# List streams in an RDB file
+sel-rdb-list path/to/file.rdb
+
+# Extract logic sections from an RDB file
+sel-rdb-extract-logic path/to/file.rdb
+
+# Create an RDB file from a text file
+sel-rdb-create path/to/settings.txt path/to/output.rdb
+```
+
+### As a Python library:
+
+```python
+import sel_rdb
+
+# Analyze an RDB file
+sel_rdb.analyze_rdb_file("path/to/file.rdb")
+
+# List streams in an RDB file
+streams = sel_rdb.list_streams("path/to/file.rdb")
+
+# Extract logic from an RDB file
+logic = sel_rdb.extract_logic_from_file("path/to/file.rdb")
+
+# Create an RDB file from a text file
+sel_rdb.create_rdb_file("path/to/settings.txt", "path/to/output.rdb")
+```
+
+## Requirements
+
+- Python 3.6+
+- olefile
+- openpyxl
+
+## License
+
+This project is licensed under the MIT License.

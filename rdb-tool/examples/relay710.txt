@@ -1,0 +1,76 @@
+; SEL QuickSet Import Template
+; Full Example for SEL-710-5 Relay
+; Generated with Test Random Numbers
+
+[Device]
+Model=SEL-710-5
+Serial=7105-654321
+FID=123456789
+PARTNO=7105-998877
+BFID=5566778899
+
+[CT/PT]
+CT Primary=400
+CT Secondary=5
+PT Primary=6000
+PT Secondary=120
+CT Connection=5A
+PT Connection=120V
+
+[Protection - Overcurrent]
+50P Pickup=120
+50P Delay=0.5
+51P Pickup=100
+51P Time Dial=2.0
+50N Pickup=30
+50N Delay=0.2
+51N Pickup=25
+51N Time Dial=1.5
+
+[Protection - Voltage]
+27P Undervoltage=0.8
+59P Overvoltage=1.2
+27N Undervoltage=0.7
+59N Overvoltage=1.3
+
+[Protection - Frequency]
+81U Underfrequency=47.5
+81O Overfrequency=52.0
+81R RateOfChange=1.0
+
+[Motor Protection]
+Jam Detection=Enabled
+Locked Rotor=Enabled
+Thermal Capacity=85%
+Restart Inhibit=10s
+
+[Alarms and Events]
+Trip Message=Motor Trip Detected
+Alarm1=Undervoltage
+Alarm2=Overcurrent
+Alarm3=Ground Fault
+
+[Communications]
+Protocol=Modbus
+Address=1
+Baud=9600
+Parity=None
+StopBits=1
+Port=RS485
+StationName=Motor710
+
+[Logic Settings]
+SELogic Equation1=50P AND 51P → TRIP
+SELogic Equation2=27P OR 59P → ALARM
+SELogic Equation3=81U OR 81O → TRIP
+
+[Metering]
+Demand Interval=15
+Energy Format=kWh
+Current Scaling=1.0
+Voltage Scaling=1.0
+
+[Testing]
+Relay.rdb=883344
+TestMode=Disabled
+LastUpdate=2025-08-30

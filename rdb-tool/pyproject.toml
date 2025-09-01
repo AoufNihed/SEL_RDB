@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SEL_Rdb"
+authors = [
+    {name = "AOUF Nihed", email = "aouf_nihed@esgee-oran.dz"},
+]
+description = "A comprehensive toolkit for working with SEL (Schweitzer Engineering Laboratories) .rdb relay database files"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.6"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "olefile",
+    "openpyxl",
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/AoufNihed/SEL_RDB" 
+"Bug Tracker" = "https://github.com/AoufNihed/SEL_RDB/issues" 
+[project.scripts]
+sel-rdb-analyze = "sel_rdb.rdb_analyzer:main"
+
+sel-rdb-list = "sel_rdb.list_rdb_streams:main"
+sel-rdb-extract-logic = "sel_rdb.extract_logic_section:main"
+sel-rdb-create = "sel_rdb.create_rdb_template:main"
+
+[tool.setuptools_scm]
