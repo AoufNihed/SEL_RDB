@@ -1,10 +1,8 @@
 # SEL_RDB
 
-
 ![SEL Schweitzer Engineering Laboratories](https://www.selinc.com/images/logos/sel-logo.svg)
 
 A comprehensive toolkit for working with SEL (Schweitzer Engineering Laboratories) .rdb relay database files.
-
 Developed by **AOUF Nihed**, an Electrical Engineering student at **ESGEE (École Supérieure de Génie Électrique)**, as part of a project in collaboration with **Ateam Pro-tech**, an official partner of **SEL Schweitzer Engineering Laboratories**.
 
 ## Table of Contents
@@ -24,7 +22,6 @@ Developed by **AOUF Nihed**, an Electrical Engineering student at **ESGEE (Écol
 ## Project Overview
 
 The SEL_Rdb toolkit is a specialized Python package designed to work with SEL (Schweitzer Engineering Laboratories) .rdb relay database files. These files contain configuration data for SEL protective relays, which are widely used in power system protection applications.
-
 This toolkit provides utilities to:
 - Analyze SEL .rdb files and extract their internal structure
 - Extract logic sections containing protection and control logic
@@ -155,7 +152,6 @@ sel_rdb.create_rdb_file("path/to/settings.txt", "path/to/output.rdb")
 ### RDB File Format
 
 SEL .rdb files use the OLE2 (Object Linking and Embedding) structured storage format, which organizes data in a hierarchical structure similar to a filesystem. The files contain multiple streams, each storing different types of configuration data:
-
 - **Configuration Settings**: Protection settings, pickup values, time delays
 - **Logic Equations**: SELogic equations defining protection and control logic
 - **Device Information**: Model numbers, serial numbers, firmware versions
@@ -165,7 +161,6 @@ SEL .rdb files use the OLE2 (Object Linking and Embedding) structured storage fo
 ### Implementation Approach
 
 The toolkit uses the `olefile` library to read and manipulate the OLE2 structured storage format. For creating new RDB files, it employs a template-based approach:
-
 1. **Template Copying**: Copy a valid RDB template file
 2. **Stream Modification**: Modify specific streams with new configuration data
 3. **Validation**: Ensure the resulting file maintains proper structure
