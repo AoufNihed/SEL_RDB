@@ -37,7 +37,7 @@ pip install -e ".[dev]"
 ```
 ### From source
 ```bash
-git clone https://github.com/<your-username>/SEL_Rdb.git
+git clone https://github.com/<AoufNihed/SEL_Rdb.git
 cd SEL_Rdb
 pip install .
 ```
@@ -91,7 +91,7 @@ sel_rdb.create_rdb_file("path/to/settings.txt", "path/to/output.rdb")
 
 ## Requirements
 ```bash
-- Python 3.6+
+- Python 3.8+
 - olefile
 - openpyxl
 ```
