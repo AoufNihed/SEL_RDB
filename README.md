@@ -4,10 +4,9 @@
 
 # SEL_Rdb
 
-A Python package for analyzing and creating SEL (Schweitzer Engineering Laboratories) .rdb relay database files.
+A Python package for analyzing and creating SEL (Schweitzer Engineering Laboratories) `.rdb` relay database files.
 
-Developed by AOUF Nihed, Electrical Engineering student at ESGEE (École Supérieure de Génie Électrique), during an internship with Ateam Pro-tech (official partner of SEL Schweitzer Engineering Laboratories), as part of building [SEL_Connect](https://github.com/AoufNihed/SELConnect.git)
-
+Developed by **AOUF Nihed**, Electrical Engineering student at **ESGEE (École Supérieure de Génie Électrique)**, during an internship with **Ateam Pro-tech** (official partner of **SEL Schweitzer Engineering Laboratories**), as part of building [SEL_Connect](https://github.com/AoufNihed/SELConnect.git).
 
 ---
 
