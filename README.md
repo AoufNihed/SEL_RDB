@@ -37,7 +37,7 @@ pip install -e ".[dev]"
 ```
 ### From source
 ```bash
-git clone https://github.com/<AoufNihed/SEL_Rdb.git
+git clone https://github.com/AoufNihed/SEL_Rdb.git
 cd SEL_Rdb
 pip install .
 ```
