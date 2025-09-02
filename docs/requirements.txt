@@ -1,0 +1,8 @@
+# Core requirements
+tablib
+olefile
+openpyxl
+
+# Documentation requirements
+mkdocs>=1.4.0
+mkdocs-material>=8.0.0
