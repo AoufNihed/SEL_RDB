@@ -20,7 +20,7 @@ The package provides utilities to:
 - Convert text-based relay settings into valid .rdb format
 - Work with SEL relay configuration data programmatically
 
-(Full documentation will be published soon. Please open an issue if you find missing explanations.)
+📖 [Read the full documentation](https://aoufnihed.github.io/SEL_RDB/)
 
 ---
 
