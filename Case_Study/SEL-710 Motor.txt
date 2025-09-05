@@ -1,0 +1,82 @@
+; SEL QuickSet Import Template
+; Case Study 1: SEL-710 Relay (Motor Protection)
+
+[Device]
+Model=SEL-710
+Serial=710-112233
+FID=987654321
+PARTNO=710-445566
+BFID=1122334455
+Firmware=V7.10.15
+Location=Plant A - Pump Motor #3
+
+[CT/PT]
+CT Primary=300
+CT Secondary=5
+PT Primary=4160
+PT Secondary=120
+CT Connection=5A
+PT Connection=120V
+
+[Protection - Overcurrent]
+50P Pickup=100
+50P Delay=0.4
+51P Pickup=90
+51P Time Dial=2.5
+50N Pickup=20
+50N Delay=0.15
+51N Pickup=15
+51N Time Dial=1.8
+
+[Protection - Voltage]
+27P Undervoltage=0.85
+59P Overvoltage=1.15
+27N Undervoltage=0.75
+59N Overvoltage=1.25
+
+[Protection - Frequency]
+81U Underfrequency=48.0
+81O Overfrequency=51.5
+81R RateOfChange=0.9
+
+[Motor Protection]
+Jam Detection=Enabled
+Locked Rotor=Enabled
+Thermal Capacity=90%
+Restart Inhibit=15s
+Stall Protection=Enabled
+Load Loss Detection=Enabled
+
+[Alarms and Events]
+Trip Message=Motor Protection Trip
+Alarm1=Stall Detected
+Alarm2=Overcurrent
+Alarm3=Ground Fault
+Alarm4=Loss of Load
+
+[Communications]
+Protocol=DNP3
+Address=10
+Baud=19200
+Parity=Even
+StopBits=1
+Port=RS485
+StationName=Pump3
+
+[Logic Settings]
+SELogic Equation1=50P AND 51P → TRIP
+SELogic Equation2=27P OR 59P → ALARM
+SELogic Equation3=81U OR 81O → TRIP
+SELogic Equation4=Jam Detection → ALARM
+
+[Metering]
+Demand Interval=30
+Energy Format=kWh
+Current Scaling=1.0
+Voltage Scaling=1.0
+Power Factor Scaling=0.001
+
+[Testing]
+Relay.rdb=112200
+TestMode=Enabled
+LastUpdate=2025-08-25

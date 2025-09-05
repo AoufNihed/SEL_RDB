@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="2500" height="857" alt="SEL Schweitzer Engineering Laboratories" src="https://github.com/user-attachments/assets/94070905-4cbe-4ed5-8e6e-878911bbd5e2" />
+  <img width="2500" height="857" alt="SEL Schweitzer Engineering Laboratories" src="Logo.png" />
 </p>
 
 # SEL_Rdb
@@ -74,6 +74,19 @@ logic = sel_rdb.extract_logic_from_file("path/to/file.rdb")
 sel_rdb.create_rdb_file("path/to/settings.txt", "path/to/output.rdb")
 ```
 ---
+
+
+## Case Studies
+
+The package includes three real-world case studies demonstrating different types of SEL relays:
+
+1. **SEL-710 Motor Protection Relay** - Comprehensive motor protection with overcurrent, voltage, and frequency protection
+2. **SEL-710-5 Advanced Motor Protection Relay** - Enhanced motor protection with additional features
+3. **SEL-751A Feeder Protection Relay** - Distribution feeder protection with reclosing and breaker failure functions
+
+These case studies are located in the `Case_Study` directory and can be converted to RDB format using the package. 
+For detailed instructions, see the [Case Studies Documentation](docs/Case_Study/index.md) or try the 
+[examples/case_studies_workflow.py](examples/case_studies_workflow.py) script.
 
 ## Technical Details
 

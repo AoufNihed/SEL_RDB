@@ -1,9 +1,9 @@
 # SEL_RDB
 
-![SEL Schweitzer Engineering Laboratories](https://www.selinc.com/images/logos/sel-logo.svg)
+![SEL Schweitzer Engineering Laboratories](../Logo.png)
 
 A comprehensive toolkit for working with SEL (Schweitzer Engineering Laboratories) .rdb relay database files.
-Developed by **AOUF Nihed**, an Electrical Engineering student at **ESGEE (École Supérieure de Génie Électrique)**, as part of a project in collaboration with **Ateam Pro-tech**, an official partner of **SEL Schweitzer Engineering Laboratories**.
+Developed by **AOUF Nihed**, an Electrical Engineering student at **ESGEE (École Supérieure de Génie Électrique)**, as part of a project in  **Ateam Pro-tech**, an official partner of **SEL Schweitzer Engineering Laboratories**.
 
 ## Table of Contents
 

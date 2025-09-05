@@ -8,6 +8,8 @@ Welcome to the technical documentation for SEL_RDB, a Python package for analyzi
 - [Installation](installation.md)
 - [Quickstart](quickstart.md)
 - [Usage Examples](usage.md)
+
+- [Case Studies](Case_Study/)
 - [API Reference](api.md)
 - [Contributing](contributing.md)
 - [License](license.md)
