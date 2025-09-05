@@ -1,0 +1,86 @@
+; SEL QuickSet Import Template
+; Case Study 2: SEL-710-5 Relay (Advanced Motor Protection)
+
+[Device]
+Model=SEL-710-5
+Serial=7105-778899
+FID=223344556
+PARTNO=7105-667788
+BFID=4455667788
+Firmware=V8.02.20
+Location=Plant B - Compressor Motor #7
+
+[CT/PT]
+CT Primary=600
+CT Secondary=1
+PT Primary=13800
+PT Secondary=120
+CT Connection=1A
+PT Connection=120V
+
+[Protection - Overcurrent]
+50P Pickup=180
+50P Delay=0.35
+51P Pickup=160
+51P Time Dial=2.2
+50N Pickup=40
+50N Delay=0.1
+51N Pickup=35
+51N Time Dial=1.6
+
+[Protection - Voltage]
+27P Undervoltage=0.82
+59P Overvoltage=1.18
+27N Undervoltage=0.72
+59N Overvoltage=1.28
+47 Negative Seq=0.2
+
+[Protection - Frequency]
+81U Underfrequency=47.8
+81O Overfrequency=52.2
+81R RateOfChange=1.2
+
+[Motor Protection]
+Jam Detection=Enabled
+Locked Rotor=Enabled
+Thermal Capacity=92%
+Restart Inhibit=20s
+Stall Protection=Enabled
+Negative Sequence Overload=Enabled
+Acceleration Time=12s
+
+[Alarms and Events]
+Trip Message=Motor Trip - Compressor
+Alarm1=Thermal Overload
+Alarm2=Stall
+Alarm3=Negative Sequence
+Alarm4=Ground Fault
+Alarm5=Communication Failure
+
+[Communications]
+Protocol=Modbus
+Address=15
+Baud=9600
+Parity=None
+StopBits=2
+Port=RS485
+StationName=Compressor7
+
+[Logic Settings]
+SELogic Equation1=50P AND 51P → TRIP
+SELogic Equation2=27P OR 59P → ALARM
+SELogic Equation3=81U OR 81O → TRIP
+SELogic Equation4=Thermal Overload → TRIP
+SELogic Equation5=CommFail → ALARM
+
+[Metering]
+Demand Interval=10
+Energy Format=MWh
+Current Scaling=1.0
+Voltage Scaling=1.0
+Harmonics Enabled=True
+
+[Testing]
+Relay.rdb=223344
+TestMode=Disabled
+LastUpdate=2025-09-01

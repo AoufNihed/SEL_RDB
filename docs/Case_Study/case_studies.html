@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEL_RDB Case Studies</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5faff;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            max-width: 100%;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #004080;
+        }
+        header img {
+            max-width: 200px;
+            height: auto;
+        }
+        h1 {
+            color: #004080;
+            font-size: 2.5em;
+            margin: 20px 0;
+        }
+        h2 {
+            color: #004080;
+            border-bottom: 1px solid #004080;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #004080;
+            margin-top: 25px;
+        }
+        .overview {
+            background-color: #e6f0ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .case-study {
+            background-color: #eef5ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #004080;
+        }
+        .workflow-steps {
+            background-color: #e6f7ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .step {
+            margin: 15px 0;
+            padding-left: 20px;
+            border-left: 3px solid #0066cc;
+        }
+        .code-block {
+            background-color: #eef5ff;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+            border-top: 2px solid #004080;
+        }
+        .footer img {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .contact-info {
+            margin: 20px 0;
+        }
+        .contact-info a {
+            color: #004080;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        ul, ol {
+            line-height: 1.6;
+        }
+        li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../../Logo.png" alt="SEL RDB Logo">
+        <h1>SEL_RDB Case Studies</h1>
+    </header>
+
+    <div class="container">
+        <section class="overview">
+            <h2>Overview</h2>
+            <p>This documentation provides step-by-step instructions on how to use the SEL_RDB package with the provided case studies. 
+            The package allows you to convert text-based relay settings (.txt) into SEL .rdb files, analyze them, and run various analytics.</p>
+            <p>The workflow includes three main steps:</p>
+            <ol>
+                <li>Converting .txt files to .rdb format</li>
+                <li>Running analytics on the .rdb files</li>
+                <li>Exporting reports and results</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Case Studies Included</h2>
+            <div class="case-study">
+                <h3>1. SEL-710 Motor Protection Relay</h3>
+                <p><strong>File:</strong> SEL-710 Motor.txt</p>
+                <p>A comprehensive motor protection relay configuration with overcurrent, voltage, frequency, and motor-specific protection settings.</p>
+            </div>
+            
+            <div class="case-study">
+                <h3>2. SEL-710-5 Advanced Motor Protection Relay</h3>
+                <p><strong>File:</strong> SEL-710-5.txt</p>
+                <p>An advanced motor protection relay with additional features including negative sequence overload protection and enhanced communication settings.</p>
+            </div>
+            
+            <div class="case-study">
+                <h3>3. SEL-751A Feeder Protection Relay</h3>
+                <p><strong>File:</strong> SEL-751A Relay.txt</p>
+                <p>A feeder protection relay with reclosing, breaker failure, and sectionalizer functions for distribution feeder protection.</p>
+            </div>
+        </section>
+
+        <section class="workflow-steps">
+            <h2>Workflow</h2>
+            <div class="step">
+                <h3>Step 1: Convert .txt to .rdb</h3>
+                <p>Use the SEL_RDB package to convert text-based relay settings into a valid .rdb file format.</p>
+            </div>
+            
+            <div class="step">
+                <h3>Step 2: Analyze the .rdb File</h3>
+                <p>Run various analytics on the .rdb file to extract streams, logic sections, and other configuration data.</p>
+            </div>
+            
+            <div class="step">
+                <h3>Step 3: Export Reports</h3>
+                <p>Export the analysis results to various formats for documentation and sharing.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Example Usage Code</h2>
+            
+            <h3>Converting a .txt Case Study to .rdb</h3>
+            <div class="code-block">
+# Command-line approach
+sel-rdb-create "Case_Study/SEL-710 Motor.txt" "output/SEL-710_Motor.rdb"
+
+# Python library approach
+import sel_rdb
+sel_rdb.create_rdb_file("Case_Study/SEL-710 Motor.txt", "output/SEL-710_Motor.rdb")
+            </div>
+            
+            <h3>Running Analytics on .rdb Files</h3>
+            <div class="code-block">
+# Command-line approach
+sel-rdb-analyze "output/SEL-710_Motor.rdb"
+sel-rdb-list "output/SEL-710_Motor.rdb"
+sel-rdb-extract-logic "output/SEL-710_Motor.rdb"
+
+# Python library approach
+import sel_rdb
+
+# Analyze the RDB file structure
+sel_rdb.analyze_rdb_file("output/SEL-710_Motor.rdb")
+
+# List all streams in the RDB file
+streams = sel_rdb.list_streams("output/SEL-710_Motor.rdb")
+print("Streams in RDB file:", streams)
+
+# Extract logic sections
+logic = sel_rdb.extract_logic_from_file("output/SEL-710_Motor.rdb")
+print("Logic sections:", logic)
+            </div>
+            
+            <h3>Exporting Reports</h3>
+            <div class="code-block">
+# Save analysis results to a text file
+import sel_rdb
+
+with open("reports/SEL-710_Motor_analysis.txt", "w") as f:
+    # Redirect print output to file
+    import sys
+    original_stdout = sys.stdout
+    sys.stdout = f
+    
+    sel_rdb.analyze_rdb_file("output/SEL-710_Motor.rdb")
+    
+    # Reset stdout
+    sys.stdout = original_stdout
+
+print("Analysis report saved to reports/SEL-710_Motor_analysis.txt")
+            </div>
+        </section>
+
+        <section>
+            <h2>Available Case Studies</h2>
+            <ul>
+                <li><strong>case1_sel710.txt</strong> - SEL-710 Motor Protection Relay</li>
+                <li><strong>case2_sel710-5.txt</strong> - SEL-710-5 Advanced Motor Protection Relay</li>
+                <li><strong>case3_sel751a.txt</strong> - SEL-751A Feeder Protection Relay</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Next Steps</h2>
+            <p>Try running the workflow on all three case studies to familiarize yourself with the SEL_RDB package capabilities:</p>
+            <ol>
+                <li>Convert each .txt file to .rdb format</li>
+                <li>Analyze the generated .rdb files</li>
+                <li>Extract logic sections from each file</li>
+                <li>Compare the different relay configurations</li>
+                <li>Export reports for documentation</li>
+            </ol>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <img src="../../Logo.png" alt="SEL RDB Logo">
+        <p>Developed by AOUF Nihed</p>
+        <div class="contact-info">
+            <a href="mailto:aouf_nihed@esgee-oran.dz">aouf_nihed@esgee-oran.dz</a>
+            <a href="https://www.linkedin.com/in/nihed-aouf/">LinkedIn</a>
+            <a href="https://github.com/AoufNihed">GitHub</a>
+        </div>
+    </footer>
+</body>
+</html>

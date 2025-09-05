@@ -1,0 +1,81 @@
+; SEL QuickSet Import Template
+; Case Study 3: SEL-751A Relay (Feeder Protection)
+
+
+[Device]
+Model=SEL-751A
+Serial=751A-445566
+FID=334455667
+PARTNO=751A-778899
+BFID=9988776655
+Firmware=V6.11.03
+Location=Feeder - Substation #2
+
+[CT/PT]
+CT Primary=800
+CT Secondary=5
+PT Primary=23000
+PT Secondary=115
+CT Connection=5A
+PT Connection=115V
+
+[Protection - Overcurrent]
+50P Pickup=250
+50P Delay=0.25
+51P Pickup=220
+51P Time Dial=1.8
+50N Pickup=50
+50N Delay=0.12
+51N Pickup=40
+51N Time Dial=1.4
+
+[Protection - Voltage]
+27P Undervoltage=0.9
+59P Overvoltage=1.1
+27N Undervoltage=0.8
+59N Overvoltage=1.2
+
+[Protection - Frequency]
+81U Underfrequency=48.5
+81O Overfrequency=51.8
+81R RateOfChange=1.5
+
+[Feeder Protection]
+Reclosing=Enabled
+Reclose Attempts=3
+Reclose Interval=5s
+Sectionalizer=Disabled
+Breaker Failure=Enabled
+
+[Alarms and Events]
+Trip Message=Feeder Trip
+Alarm1=Breaker Failure
+Alarm2=Overcurrent
+Alarm3=Ground Fault
+Alarm4=Reclose Lockout
+
+[Communications]
+Protocol=IEC61850
+Address=20
+Baud=38400
+Parity=None
+StopBits=1
+Port=Ethernet
+StationName=Feeder2
+
+[Logic Settings]
+SELogic Equation1=50P AND 51P → TRIP
+SELogic Equation2=BreakerFail → ALARM
+SELogic Equation3=Reclose Lockout → ALARM
+
+[Metering]
+Demand Interval=5
+Energy Format=kWh
+Current Scaling=1.0
+Voltage Scaling=1.0
+Power Demand=Enabled
+
+[Testing]
+Relay.rdb=334455
+TestMode=Enabled
+LastUpdate=2025-09-05
