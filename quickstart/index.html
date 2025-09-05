@@ -6,10 +6,14 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Technical documentation for SEL_RDB, a Python package for analyzing and creating SEL relay database files.">
+      
+      
+        <meta name="author" content="AOUF Nihed">
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../installation/">
       
       
         <link rel="next" href="../usage/">
@@ -25,6 +29,9 @@
     
     
       <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -53,7 +60,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -74,14 +88,11 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="SEL_RDB Documentation" class="md-header__button md-logo" aria-label="SEL_RDB Documentation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../Logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -104,6 +115,32 @@
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -152,13 +189,13 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/AoufNihed/SEL_RDB" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/AoufNihed/SEL_Rdb" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
-    SEL_RDB
+    AoufNihed/SEL_Rdb
   </div>
 </a>
       </div>
@@ -171,6 +208,169 @@
       
       
         
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../installation/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Installation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Quickstart
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../usage/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Usage Examples
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Case_Study/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Case Studies
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../api/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  API Reference
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../contributing/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Contributing
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../license/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  License
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
           
         
       
@@ -185,26 +385,29 @@
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="SEL_RDB Documentation" class="md-nav__button md-logo" aria-label="SEL_RDB Documentation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../Logo.png" alt="logo">
 
     </a>
     SEL_RDB Documentation
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/AoufNihed/SEL_RDB" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/AoufNihed/SEL_Rdb" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
-    SEL_RDB
+    AoufNihed/SEL_Rdb
   </div>
 </a>
     </div>
@@ -224,6 +427,28 @@
   
   <span class="md-ellipsis">
     Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation
     
   </span>
   
@@ -402,7 +627,29 @@
   
   
   <span class="md-ellipsis">
-    Usage
+    Usage Examples
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Case_Study/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Case Studies
     
   </span>
   
@@ -425,50 +672,6 @@
   
   <span class="md-ellipsis">
     API Reference
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../PROJECT_SUMMARY/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Project Summary
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../RDB_Creation_Summary/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    RDB Creation
     
   </span>
   
@@ -529,125 +732,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#command-line-usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Command-line Usage
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Command-line Usage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#analyze-an-rdb-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      Analyze an RDB file
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#list-streams-in-an-rdb-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      List streams in an RDB file
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#extract-logic-sections" class="md-nav__link">
-    <span class="md-ellipsis">
-      Extract logic sections
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-an-rdb-file-from-a-text-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create an RDB file from a text file
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#python-library-usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Python Library Usage
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Python Library Usage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#basic-import-and-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic import and analysis
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#text-file-format-for-rdb-creation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Text File Format for RDB Creation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-output" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Output
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           
             <div class="md-content" data-md-component="content">
@@ -660,32 +744,28 @@
   
 
 
-<h1 id="quickstart-guide">Quickstart Guide<a class="headerlink" href="#quickstart-guide" title="Permanent link">&para;</a></h1>
+<h1 id="quickstart-guide">Quickstart Guide</h1>
 <p>This guide will help you get started with SEL_RDB quickly.</p>
-<h2 id="command-line-usage">Command-line Usage<a class="headerlink" href="#command-line-usage" title="Permanent link">&para;</a></h2>
-<h3 id="analyze-an-rdb-file">Analyze an RDB file<a class="headerlink" href="#analyze-an-rdb-file" title="Permanent link">&para;</a></h3>
+<h2 id="command-line-usage">Command-line Usage</h2>
+<h3 id="analyze-an-rdb-file">Analyze an RDB file</h3>
 <p>To analyze an RDB file and display its internal structure:</p>
-<div class="codehilite"><pre><span></span><code>sel-rdb-analyze<span class="w"> </span>path/to/file.rdb
+<div class="highlight"><pre><span></span><code>sel-rdb-analyze<span class="w"> </span>path/to/file.rdb
 </code></pre></div>
-
-<h3 id="list-streams-in-an-rdb-file">List streams in an RDB file<a class="headerlink" href="#list-streams-in-an-rdb-file" title="Permanent link">&para;</a></h3>
+<h3 id="list-streams-in-an-rdb-file">List streams in an RDB file</h3>
 <p>To list all streams within an RDB file:</p>
-<div class="codehilite"><pre><span></span><code>sel-rdb-list<span class="w"> </span>path/to/file.rdb
+<div class="highlight"><pre><span></span><code>sel-rdb-list<span class="w"> </span>path/to/file.rdb
 </code></pre></div>
-
-<h3 id="extract-logic-sections">Extract logic sections<a class="headerlink" href="#extract-logic-sections" title="Permanent link">&para;</a></h3>
+<h3 id="extract-logic-sections">Extract logic sections</h3>
 <p>To extract logic sections from an RDB file:</p>
-<div class="codehilite"><pre><span></span><code>sel-rdb-extract-logic<span class="w"> </span>path/to/file.rdb
+<div class="highlight"><pre><span></span><code>sel-rdb-extract-logic<span class="w"> </span>path/to/file.rdb
 </code></pre></div>
-
-<h3 id="create-an-rdb-file-from-a-text-file">Create an RDB file from a text file<a class="headerlink" href="#create-an-rdb-file-from-a-text-file" title="Permanent link">&para;</a></h3>
+<h3 id="create-an-rdb-file-from-a-text-file">Create an RDB file from a text file</h3>
 <p>To create an RDB file from a text file:</p>
-<div class="codehilite"><pre><span></span><code>sel-rdb-create<span class="w"> </span>path/to/settings.txt<span class="w"> </span>path/to/output.rdb
+<div class="highlight"><pre><span></span><code>sel-rdb-create<span class="w"> </span>path/to/settings.txt<span class="w"> </span>path/to/output.rdb
 </code></pre></div>
-
-<h2 id="python-library-usage">Python Library Usage<a class="headerlink" href="#python-library-usage" title="Permanent link">&para;</a></h2>
-<h3 id="basic-import-and-analysis">Basic import and analysis<a class="headerlink" href="#basic-import-and-analysis" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">sel_rdb</span>
+<h2 id="python-library-usage">Python Library Usage</h2>
+<h3 id="basic-import-and-analysis">Basic import and analysis</h3>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">sel_rdb</span>
 
 <span class="c1"># Analyze an RDB file and display its internal structure</span>
 <span class="n">sel_rdb</span><span class="o">.</span><span class="n">analyze_rdb_file</span><span class="p">(</span><span class="s2">&quot;path/to/file.rdb&quot;</span><span class="p">)</span>
@@ -701,10 +781,9 @@
 <span class="c1"># Create an RDB file from a text file</span>
 <span class="n">sel_rdb</span><span class="o">.</span><span class="n">create_rdb_file</span><span class="p">(</span><span class="s2">&quot;path/to/settings.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;path/to/output.rdb&quot;</span><span class="p">)</span>
 </code></pre></div>
-
-<h2 id="text-file-format-for-rdb-creation">Text File Format for RDB Creation<a class="headerlink" href="#text-file-format-for-rdb-creation" title="Permanent link">&para;</a></h2>
+<h2 id="text-file-format-for-rdb-creation">Text File Format for RDB Creation</h2>
 <p>To create an RDB file from a text file, you need to format your settings in a specific way:</p>
-<div class="codehilite"><pre><span></span><code><span class="k">[Device]</span>
+<div class="highlight"><pre><span></span><code><span class="k">[Device]</span>
 <span class="na">Model</span><span class="o">=</span><span class="s">SEL-710</span>
 
 <span class="k">[Protection - Overcurrent]</span>
@@ -722,27 +801,25 @@
 <span class="na">Protocol</span><span class="o">=</span><span class="s">Modbus</span>
 <span class="na">Address</span><span class="o">=</span><span class="s">1</span>
 </code></pre></div>
-
-<h2 id="example-output">Example Output<a class="headerlink" href="#example-output" title="Permanent link">&para;</a></h2>
+<h2 id="example-output">Example Output</h2>
 <p>When you analyze an RDB file, you'll see output like:</p>
-<div class="codehilite"><pre><span></span><code><span class="n">Streams</span><span class="o">/</span><span class="n">groups</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">examples</span><span class="o">/</span><span class="n">Relay710</span><span class="p">.</span><span class="nl">rdb</span><span class="p">:</span>
-<span class="n">Relays</span><span class="o">/</span><span class="k">New</span><span class="w"> </span><span class="n">Settings</span><span class="w"> </span><span class="mi">2</span><span class="o">/</span><span class="n">Misc</span><span class="o">/</span><span class="n">Cfg</span><span class="p">.</span><span class="n">txt</span>
-<span class="w">  </span><span class="k">Size</span><span class="err">:</span><span class="w"> </span><span class="mi">1024</span><span class="w"> </span><span class="n">bytes</span>
-<span class="w">  </span><span class="n">Content</span><span class="w"> </span><span class="p">(</span><span class="k">first</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="n">lines</span><span class="p">)</span><span class="err">:</span>
-<span class="w">    </span><span class="o">[</span><span class="n">INFO</span><span class="o">]</span>
-<span class="w">    </span><span class="n">RELAYTYPE</span><span class="o">=</span><span class="n">SEL</span><span class="o">-</span><span class="mi">710</span>
-<span class="w">    </span><span class="n">FID</span><span class="o">=</span><span class="n">SEL</span><span class="o">-</span><span class="mi">710</span><span class="o">-</span><span class="n">Rxxx</span><span class="o">-</span><span class="n">Vx</span><span class="o">-</span><span class="n">Z008004</span><span class="o">-</span><span class="n">Dxxxxxxxx</span>
-<span class="p">...</span>
+<div class="highlight"><pre><span></span><code>Streams/groups in examples/Relay710.rdb:
+Relays/New Settings 2/Misc/Cfg.txt
+  Size: 1024 bytes
+  Content (first 3 lines):
+    [INFO]
+    RELAYTYPE=SEL-710
+    FID=SEL-710-Rxxx-Vx-Z008004-Dxxxxxxxx
+...
 
-<span class="n">Relays</span><span class="o">/</span><span class="k">New</span><span class="w"> </span><span class="n">Settings</span><span class="w"> </span><span class="mi">2</span><span class="o">/</span><span class="n">set_1</span><span class="p">.</span><span class="n">txt</span>
-<span class="w">  </span><span class="k">Size</span><span class="err">:</span><span class="w"> </span><span class="mi">2048</span><span class="w"> </span><span class="n">bytes</span>
-<span class="w">  </span><span class="n">Content</span><span class="w"> </span><span class="p">(</span><span class="k">first</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="n">lines</span><span class="p">)</span><span class="err">:</span>
-<span class="w">    </span><span class="o">[</span><span class="n">INFO</span><span class="o">]</span>
-<span class="w">    </span><span class="n">RELAYTYPE</span><span class="o">=</span><span class="n">SEL</span><span class="o">-</span><span class="mi">710</span>
-<span class="w">    </span><span class="o">[</span><span class="n">1</span><span class="o">]</span>
-<span class="p">...</span>
+Relays/New Settings 2/set_1.txt
+  Size: 2048 bytes
+  Content (first 3 lines):
+    [INFO]
+    RELAYTYPE=SEL-710
+    [1]
+...
 </code></pre></div>
-
 <p>This gives you a comprehensive view of the internal structure of the RDB file.</p>
 
 
@@ -764,26 +841,33 @@
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
       </main>
       
-        <footer class="md-footer">
-  
+<footer class="md-footer">
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
-  
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
-  
-</div>
-      
+        <div class="md-copyright__highlight">
+          Developed by AOUF Nihed
+        </div>
+        <div class="md-copyright__highlight">
+          <a href="https://www.linkedin.com/in/nihed-aouf/" target="_blank">LinkedIn</a> |
+          <a href="https://github.com/AoufNihed" target="_blank">GitHub</a>
+        </div>
+        <div class="md-copyright__highlight">
+          <a href="mailto:aouf_nihed@esgee-oran.dz">aouf_nihed@esgee-oran.dz</a>
+        </div>
+      </div>
     </div>
   </div>
 </footer>
-      
+
     </div>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
@@ -792,7 +876,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>

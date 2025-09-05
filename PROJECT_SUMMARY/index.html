@@ -6,13 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Technical documentation for SEL_RDB, a Python package for analyzing and creating SEL relay database files.">
+      
+      
+        <meta name="author" content="AOUF Nihed">
       
       
       
-        <link rel="prev" href="../api/">
-      
-      
-        <link rel="next" href="../RDB_Creation_Summary/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,11 +20,14 @@
     
     
       
-        <title>Project Summary - SEL_RDB Documentation</title>
+        <title>SEL RDB Tools - Project Summary - SEL_RDB Documentation</title>
       
     
     
       <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -53,7 +56,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -74,14 +84,11 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="SEL_RDB Documentation" class="md-header__button md-logo" aria-label="SEL_RDB Documentation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../Logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -98,12 +105,38 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Project Summary
+              SEL RDB Tools - Project Summary
             
           </span>
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -152,13 +185,13 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/AoufNihed/SEL_RDB" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/AoufNihed/SEL_Rdb" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
-    SEL_RDB
+    AoufNihed/SEL_Rdb
   </div>
 </a>
       </div>
@@ -171,6 +204,167 @@
       
       
         
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../installation/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Installation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../quickstart/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Quickstart
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../usage/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Usage Examples
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Case_Study/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Case Studies
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../api/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  API Reference
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../contributing/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Contributing
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../license/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  License
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
           
         
       
@@ -185,26 +379,29 @@
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="SEL_RDB Documentation" class="md-nav__button md-logo" aria-label="SEL_RDB Documentation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../Logo.png" alt="logo">
 
     </a>
     SEL_RDB Documentation
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/AoufNihed/SEL_RDB" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/AoufNihed/SEL_Rdb" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
-    SEL_RDB
+    AoufNihed/SEL_Rdb
   </div>
 </a>
     </div>
@@ -224,6 +421,28 @@
   
   <span class="md-ellipsis">
     Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation
     
   </span>
   
@@ -267,7 +486,29 @@
   
   
   <span class="md-ellipsis">
-    Usage
+    Usage Examples
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Case_Study/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Case Studies
     
   </span>
   
@@ -290,344 +531,6 @@
   
   <span class="md-ellipsis">
     API Reference
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Project Summary
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    Project Summary
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#project-overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-achievements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Achievements
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Key Achievements">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-rdb-file-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. RDB File Analysis
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-logic-extraction" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Logic Extraction
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-file-conversion" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. File Conversion
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-project-organization" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Project Organization
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tools-included" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tools Included
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Tools Included">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#analysis-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      Analysis Tools
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#logic-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      Logic Tools
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conversion-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conversion Tools
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#technical-approach" class="md-nav__link">
-    <span class="md-ellipsis">
-      Technical Approach
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Technical Approach">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#file-format-understanding" class="md-nav__link">
-    <span class="md-ellipsis">
-      File Format Understanding
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#implementation-strategies" class="md-nav__link">
-    <span class="md-ellipsis">
-      Implementation Strategies
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#challenges-and-limitations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Challenges and Limitations
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Challenges and Limitations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#technical-challenges" class="md-nav__link">
-    <span class="md-ellipsis">
-      Technical Challenges
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#current-limitations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Current Limitations
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Usage Examples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Usage Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#analyze-an-rdb-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      Analyze an RDB file
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#extract-logic-sections" class="md-nav__link">
-    <span class="md-ellipsis">
-      Extract logic sections
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-rdb-from-template" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create RDB from template
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#future-enhancements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Future Enhancements
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Future Enhancements">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#technical-improvements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Technical Improvements
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#feature-additions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Feature Additions
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../RDB_Creation_Summary/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    RDB Creation
     
   </span>
   
@@ -688,284 +591,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#project-overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-achievements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Achievements
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Key Achievements">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-rdb-file-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. RDB File Analysis
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-logic-extraction" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Logic Extraction
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-file-conversion" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. File Conversion
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-project-organization" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Project Organization
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tools-included" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tools Included
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Tools Included">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#analysis-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      Analysis Tools
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#logic-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      Logic Tools
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conversion-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conversion Tools
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#technical-approach" class="md-nav__link">
-    <span class="md-ellipsis">
-      Technical Approach
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Technical Approach">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#file-format-understanding" class="md-nav__link">
-    <span class="md-ellipsis">
-      File Format Understanding
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#implementation-strategies" class="md-nav__link">
-    <span class="md-ellipsis">
-      Implementation Strategies
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#challenges-and-limitations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Challenges and Limitations
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Challenges and Limitations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#technical-challenges" class="md-nav__link">
-    <span class="md-ellipsis">
-      Technical Challenges
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#current-limitations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Current Limitations
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Usage Examples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Usage Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#analyze-an-rdb-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      Analyze an RDB file
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#extract-logic-sections" class="md-nav__link">
-    <span class="md-ellipsis">
-      Extract logic sections
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-rdb-from-template" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create RDB from template
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#future-enhancements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Future Enhancements
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Future Enhancements">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#technical-improvements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Technical Improvements
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#feature-additions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Feature Additions
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           
             <div class="md-content" data-md-component="content">
@@ -978,29 +603,29 @@
   
 
 
-<h1 id="sel-rdb-tools-project-summary">SEL RDB Tools - Project Summary<a class="headerlink" href="#sel-rdb-tools-project-summary" title="Permanent link">&para;</a></h1>
-<h2 id="project-overview">Project Overview<a class="headerlink" href="#project-overview" title="Permanent link">&para;</a></h2>
+<h1 id="sel-rdb-tools-project-summary">SEL RDB Tools - Project Summary</h1>
+<h2 id="project-overview">Project Overview</h2>
 <p>This project provides a comprehensive toolkit for working with SEL (Schweitzer Engineering Laboratories) .rdb relay database files. The tools enable users to analyze, extract, and manipulate relay configuration data stored in the proprietary OLE2 structured storage format used by SEL QuickSet software.</p>
-<h2 id="key-achievements">Key Achievements<a class="headerlink" href="#key-achievements" title="Permanent link">&para;</a></h2>
-<h3 id="1-rdb-file-analysis">1. RDB File Analysis<a class="headerlink" href="#1-rdb-file-analysis" title="Permanent link">&para;</a></h3>
+<h2 id="key-achievements">Key Achievements</h2>
+<h3 id="1-rdb-file-analysis">1. RDB File Analysis</h3>
 <ul>
 <li>Successfully analyzed the structure of SEL .rdb files</li>
 <li>Identified all streams and their content within RDB files</li>
 <li>Created tools to list and examine RDB file contents</li>
 </ul>
-<h3 id="2-logic-extraction">2. Logic Extraction<a class="headerlink" href="#2-logic-extraction" title="Permanent link">&para;</a></h3>
+<h3 id="2-logic-extraction">2. Logic Extraction</h3>
 <ul>
 <li>Developed functionality to extract logic sections from RDB files</li>
 <li>Created tools to analyze SELogic equations and other logic elements</li>
 <li>Implemented extraction of protection and automation logic</li>
 </ul>
-<h3 id="3-file-conversion">3. File Conversion<a class="headerlink" href="#3-file-conversion" title="Permanent link">&para;</a></h3>
+<h3 id="3-file-conversion">3. File Conversion</h3>
 <ul>
 <li>Explored multiple approaches to convert text-based relay settings to .rdb format</li>
 <li>Implemented template-based approach for creating RDB files</li>
 <li>Documented limitations and challenges in RDB file creation</li>
 </ul>
-<h3 id="4-project-organization">4. Project Organization<a class="headerlink" href="#4-project-organization" title="Permanent link">&para;</a></h3>
+<h3 id="4-project-organization">4. Project Organization</h3>
 <ul>
 <li>Created a well-structured project with clear directories:</li>
 <li><code>src/</code> - Source code for all tools</li>
@@ -1009,79 +634,76 @@
 <li><code>tests/</code> - Test files (prepared for future use)</li>
 <li>Developed a unified command-line interface</li>
 </ul>
-<h2 id="tools-included">Tools Included<a class="headerlink" href="#tools-included" title="Permanent link">&para;</a></h2>
-<h3 id="analysis-tools">Analysis Tools<a class="headerlink" href="#analysis-tools" title="Permanent link">&para;</a></h3>
+<h2 id="tools-included">Tools Included</h2>
+<h3 id="analysis-tools">Analysis Tools</h3>
 <ul>
 <li><code>rdb_analyzer.py</code> - Comprehensive RDB file analysis</li>
 <li><code>list_rdb_streams.py</code> - Stream listing utility</li>
 <li><code>extract_settings.py</code> - Settings extraction tool</li>
 </ul>
-<h3 id="logic-tools">Logic Tools<a class="headerlink" href="#logic-tools" title="Permanent link">&para;</a></h3>
+<h3 id="logic-tools">Logic Tools</h3>
 <ul>
 <li><code>extract_logic_section.py</code> - Logic section extraction</li>
 <li><code>logic_analyzer.py</code> - Logic equation analysis</li>
 <li><code>sel_logic_count.py</code> - Logic element counting</li>
 <li><code>logic_changer.py</code> - Logic modification utilities</li>
 </ul>
-<h3 id="conversion-tools">Conversion Tools<a class="headerlink" href="#conversion-tools" title="Permanent link">&para;</a></h3>
+<h3 id="conversion-tools">Conversion Tools</h3>
 <ul>
 <li><code>create_rdb_template.py</code> - Template-based RDB creation</li>
 <li><code>convert_txt_to_rdb.py</code> - Text to RDB conversion (experimental)</li>
 <li><code>create_rdb_com.py</code> - COM-based RDB creation (experimental)</li>
 </ul>
-<h2 id="technical-approach">Technical Approach<a class="headerlink" href="#technical-approach" title="Permanent link">&para;</a></h2>
-<h3 id="file-format-understanding">File Format Understanding<a class="headerlink" href="#file-format-understanding" title="Permanent link">&para;</a></h3>
+<h2 id="technical-approach">Technical Approach</h2>
+<h3 id="file-format-understanding">File Format Understanding</h3>
 <p>The project successfully reverse-engineered key aspects of the SEL RDB format:
 - OLE2 structured storage container format
 - Stream organization with "Relays/New Settings 2/" hierarchy
 - Content format with sections identified by [INFO] and group identifiers
 - Logic equations stored in SVxx fields with specific syntax</p>
-<h3 id="implementation-strategies">Implementation Strategies<a class="headerlink" href="#implementation-strategies" title="Permanent link">&para;</a></h3>
+<h3 id="implementation-strategies">Implementation Strategies</h3>
 <ol>
 <li><strong>Template-based approach</strong> - Most successful for creating RDB files</li>
 <li><strong>COM objects</strong> - Attempted but faced technical challenges</li>
 <li><strong>Direct file manipulation</strong> - Used olefile library with limitations</li>
 </ol>
-<h2 id="challenges-and-limitations">Challenges and Limitations<a class="headerlink" href="#challenges-and-limitations" title="Permanent link">&para;</a></h2>
-<h3 id="technical-challenges">Technical Challenges<a class="headerlink" href="#technical-challenges" title="Permanent link">&para;</a></h3>
+<h2 id="challenges-and-limitations">Challenges and Limitations</h2>
+<h3 id="technical-challenges">Technical Challenges</h3>
 <ol>
 <li><strong>OLE2 Complexity</strong> - Creating valid structured storage files from scratch is complex</li>
 <li><strong>Stream Size Constraints</strong> - The olefile library cannot modify stream sizes easily</li>
 <li><strong>Format Specificity</strong> - SEL RDB format has specific requirements not fully documented</li>
 </ol>
-<h3 id="current-limitations">Current Limitations<a class="headerlink" href="#current-limitations" title="Permanent link">&para;</a></h3>
+<h3 id="current-limitations">Current Limitations</h3>
 <ol>
 <li><strong>Full Conversion Not Complete</strong> - Text to RDB conversion is not fully implemented</li>
 <li><strong>Platform Dependencies</strong> - Some approaches require Windows-specific libraries</li>
 <li><strong>Size Constraints</strong> - Template-based approach requires careful stream size management</li>
 </ol>
-<h2 id="usage-examples">Usage Examples<a class="headerlink" href="#usage-examples" title="Permanent link">&para;</a></h2>
-<h3 id="analyze-an-rdb-file">Analyze an RDB file<a class="headerlink" href="#analyze-an-rdb-file" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code>python<span class="w"> </span>rdb_tool.py<span class="w"> </span>analyze<span class="w"> </span>examples/Relay710.rdb
+<h2 id="usage-examples">Usage Examples</h2>
+<h3 id="analyze-an-rdb-file">Analyze an RDB file</h3>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>rdb_tool.py<span class="w"> </span>analyze<span class="w"> </span>examples/Relay710.rdb
 </code></pre></div>
-
-<h3 id="extract-logic-sections">Extract logic sections<a class="headerlink" href="#extract-logic-sections" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code>python<span class="w"> </span>rdb_tool.py<span class="w"> </span>extract-logic<span class="w"> </span>examples/Relay710.rdb
+<h3 id="extract-logic-sections">Extract logic sections</h3>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>rdb_tool.py<span class="w"> </span>extract-logic<span class="w"> </span>examples/Relay710.rdb
 </code></pre></div>
-
-<h3 id="create-rdb-from-template">Create RDB from template<a class="headerlink" href="#create-rdb-from-template" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code>python<span class="w"> </span>src/create_rdb_template.py<span class="w"> </span>examples/relay710.txt<span class="w"> </span>output.rdb
+<h3 id="create-rdb-from-template">Create RDB from template</h3>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>src/create_rdb_template.py<span class="w"> </span>examples/relay710.txt<span class="w"> </span>output.rdb
 </code></pre></div>
-
-<h2 id="future-enhancements">Future Enhancements<a class="headerlink" href="#future-enhancements" title="Permanent link">&para;</a></h2>
-<h3 id="technical-improvements">Technical Improvements<a class="headerlink" href="#technical-improvements" title="Permanent link">&para;</a></h3>
+<h2 id="future-enhancements">Future Enhancements</h2>
+<h3 id="technical-improvements">Technical Improvements</h3>
 <ol>
 <li><strong>Complete Conversion Tool</strong> - Fully implement text to RDB conversion</li>
 <li><strong>Cross-platform Support</strong> - Reduce Windows-specific dependencies</li>
 <li><strong>Enhanced Error Handling</strong> - Improve robustness and error reporting</li>
 </ol>
-<h3 id="feature-additions">Feature Additions<a class="headerlink" href="#feature-additions" title="Permanent link">&para;</a></h3>
+<h3 id="feature-additions">Feature Additions</h3>
 <ol>
 <li><strong>Logic Modification</strong> - Tools to modify existing logic equations</li>
 <li><strong>Validation Tools</strong> - Verify RDB file integrity and correctness</li>
 <li><strong>Batch Processing</strong> - Process multiple files at once</li>
 </ol>
-<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h2>
+<h2 id="conclusion">Conclusion</h2>
 <p>This project successfully created a comprehensive toolkit for working with SEL RDB files, providing valuable functionality for analyzing and extracting relay configuration data. While full conversion from text settings to RDB format remains challenging due to the complexity of the OLE2 structured storage format, the template-based approach provides a viable solution for many use cases.</p>
 <p>The organized project structure and well-documented code provide a solid foundation for future enhancements and maintenance. The tools have been tested with real SEL RDB files and proven to work correctly for their intended purposes.</p>
 
@@ -1104,26 +726,33 @@
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
       </main>
       
-        <footer class="md-footer">
-  
+<footer class="md-footer">
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
-  
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
-  
-</div>
-      
+        <div class="md-copyright__highlight">
+          Developed by AOUF Nihed
+        </div>
+        <div class="md-copyright__highlight">
+          <a href="https://www.linkedin.com/in/nihed-aouf/" target="_blank">LinkedIn</a> |
+          <a href="https://github.com/AoufNihed" target="_blank">GitHub</a>
+        </div>
+        <div class="md-copyright__highlight">
+          <a href="mailto:aouf_nihed@esgee-oran.dz">aouf_nihed@esgee-oran.dz</a>
+        </div>
+      </div>
     </div>
   </div>
 </footer>
-      
+
     </div>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
@@ -1132,7 +761,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
